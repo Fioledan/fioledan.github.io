@@ -59,7 +59,6 @@ img {
   height: auto;
 }
 
-/* на телефоне картинки без обтекания */
 @media (max-width: 600px) {
   .left, .right {
     float: none;
