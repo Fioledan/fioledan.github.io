@@ -1,31 +1,14 @@
-// Скрипт 1: идущие часики в заголовке (Title)
-const pageTitle = document.title;
+// 1. Часы в заголовке страницы
+setInterval(function () {
+  document.title = new Date().toLocaleTimeString();
+}, 1000);
 
-function updateTitle() {
-  const time = new Date().toLocaleTimeString('ru-RU');
-  document.title = time + ' — ' + pageTitle;
+// 2. Смена цвета фона
+function changeColor(color) {
+  document.body.style.background = color;
 }
 
-updateTitle();
-setInterval(updateTitle, 1000);
-
-// Скрипт 2: изменение цвета фона при нажатии на кнопки
-const colorButtons = document.querySelectorAll('[data-color]');
-
-colorButtons.forEach(function (button) {
-  button.addEventListener('click', function () {
-    document.body.style.background = button.dataset.color;
-  });
-});
-
-// Скрипт 3: вывод текущей даты в pop-up по нажатию на кнопку
-const dateButton = document.getElementById('date');
-
-if (dateButton) {
-  dateButton.addEventListener('click', function () {
-    const today = new Date().toLocaleDateString('ru-RU', {
-      weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
-    });
-    alert('Сегодня ' + today);
-  });
+// 3. Текущая дата в pop-up
+function showDate() {
+  alert('Сегодня: ' + new Date().toLocaleDateString());
 }
