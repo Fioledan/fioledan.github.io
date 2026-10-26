@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 130" width="600" height="130">
+  <rect width="600" height="130" rx="12" fill="#f5efe0"/>
+  <g font-family="DejaVu Sans, Segoe UI Symbol, Arial Unicode MS, sans-serif" text-anchor="middle" fill="#222">
+    <g font-size="64"><text x="50" y="80">♔</text><text x="150" y="80">♕</text><text x="250" y="80">♖</text><text x="350" y="80">♗</text><text x="450" y="80">♘</text><text x="550" y="80">♙</text></g>
+    <g font-size="15" fill="#555"><text x="50" y="112">король</text><text x="150" y="112">ферзь</text><text x="250" y="112">ладья</text><text x="350" y="112">слон</text><text x="450" y="112">конь</text><text x="550" y="112">пешка</text></g>
+  </g>
+</svg>
